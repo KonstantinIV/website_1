@@ -1,0 +1,66 @@
+
+body{
+	background-color:#63aa78;
+}
+
+
+/*HEADER*********************************************************/
+.image_container{
+    width: 100%;
+    height: 360px;
+
+}
+.image_main{
+
+    height: 360px;
+    width:360px;
+    /*background-color: aquamarine;*/
+    margin: 0 auto;
+
+}
+/*CONTENT*********************************************************/
+/*Main content*/
+.bio{
+    width: 100%;
+    margin-bottom: 100px;
+}
+.image_of_me_container{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+
+}
+.image_of_me{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+    border-radius: 50%;
+    border:2px solid #26db44;
+}
+
+.bio_line{
+    border-color: #26db44;
+    width: 70%;
+}
+
+.text_container{
+    width:50%;
+    margin: 0 auto;
+}
+.text{
+    text-align: center;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+/*Skills content*/
+
+
+
+
+
+
+/*HEADER*********************************************************/

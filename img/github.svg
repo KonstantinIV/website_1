@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="500"
+   height="500"
+   viewBox="0 0 132.29167 132.29167"
+   version="1.1"
+   id="svg10274"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="github.svg">
+  <defs
+     id="defs10268">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient10831">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop10827" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop10829" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient10831"
+       id="linearGradient10837"
+       x1="-0.068492778"
+       y1="217.97978"
+       x2="140.29498"
+       y2="217.97978"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.96485343,0,0,0.96485347,-0.04583604,0.40705958)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.1320312"
+     inkscape:cx="244.52726"
+     inkscape:cy="208.16252"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata10271">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-164.70834)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.77367401px;line-height:0.80000001;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:url(#linearGradient10837);stroke-width:1.27264166;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       x="-4.037251"
+       y="207.48058"
+       id="text10821"
+       transform="scale(0.91086891,1.0978528)"><tspan
+         sodipodi:role="line"
+         id="tspan10819"
+         x="-4.037251"
+         y="207.48058"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:77.54734802px;line-height:0.80000001;font-family:Arial;-inkscape-font-specification:'Arial Bold';stroke:none;stroke-width:1.27264166;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;fill:#42be4c;fill-opacity:1">Git</tspan><tspan
+         sodipodi:role="line"
+         x="-4.037251"
+         y="269.51846"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:77.54734802px;line-height:0.80000001;font-family:Arial;-inkscape-font-specification:'Arial Bold';stroke:none;stroke-width:1.27264166;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;fill:#42be4c;fill-opacity:1"
+         id="tspan10823">Hub</tspan></text>
+  </g>
+</svg>

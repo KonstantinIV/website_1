@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+ 
+<link rel="stylesheet" type="text/css" href="css/navigation_bar.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/skills.css">
+
+<script src="js/jquery-3.3.1.js"></script>
+
+<script src="js/script.js"></script>
+
+</head>
+<body onload="myFunction()">
+<header>
+
+<div class="image_container">
+        <div class="image_main">
+        </div>
+</div>
+<div class="row">
+
+        <div class="center_row">
+            <div class="button1"><a class="button2" href="projects.html">Projects</a>
+            </div>
+            <div class="button1"><a class="button2" href="main.html">Main</a>
+            </div>
+            <div class="button1"><a class="button2" href="skills.html">Skills</a>
+            </div>
+        </div>
+        
+    </div>
+</header>
+
+<!-- Explanation -->
+<div class="line"><h2 class="line_text">Bar explanation!</h2><div class="line_half"></div></div>
+
+<div class="progress_explanation_container">
+       
+                <img class="progress_explanation" src="img/progress_bar.svg" alt="explanation">
+       
+</div>
+
+<!--Skill bars -->
+
+<div class="line"><h2 class="line_text">Skills!</h2><div class="line_half"></div></div>
+
+<div class="container_skills">
+
+   
+        <div class="skill_bar" onclick="show_skill_set()">
+                <div class="progress_container">
+                    <!-- Text-->
+                    <div class="progress_text">WEB development</div>
+                    <!-- Progress -->
+                    <div class="progress_bar">
+                        <div class="progress" id="web"></div>
+                    </div>
+                </div> 
+
+
+        </div>
+        <div class="skill_bar" id="sub_skill_bar">
+                <div class="progress_container">
+                        <!-- Text-->
+                        <div class="progress_text">WEB development</div>
+                        <!-- Progress -->
+                        <div class="progress_bar">
+                            <div class="progress" id="web2"></div>
+                        </div>
+                    </div> 
+        </div>
+
+
+
+        <div class="skill_bar">
+                <div class="progress_container">
+                    <!-- Text-->
+                    <div class="progress_text">Python</div>
+                    <!-- Progress -->
+                    <div class="progress_bar">
+                        <div class="progress" id="Python"></div>
+                    </div>
+                </div>    
+
+        </div>
+
+        <div class="skill_bar">
+                <div class="progress_container">
+                    <!-- Text-->
+                    <div class="progress_text">PHP</div>
+                    <!-- Progress -->
+                    <div class="progress_bar">
+                        <div class="progress" id="PHP"></div>
+                    </div>
+                </div>    
+
+        </div>
+
+        <div class="skill_bar">
+                <div class="progress_container">
+                    <!-- Text-->
+                    <div class="progress_text">JAVA</div>
+                    <!-- Progress -->
+                    <div class="progress_bar">
+                        <div class="progress" id="JAVA"></div>
+                    </div>
+                </div>    
+
+        </div>
+    
+        
+</div>
+       
+
+      
+<footer>
+
+</footer>
+	  
+</body>
+</html>

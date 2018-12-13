@@ -1,0 +1,213 @@
+.projects_container{
+    width: inherit;
+    padding: 0 50px;
+}
+.middle_container{
+    margin: 0 auto;
+}
+
+.single_container{
+    transition: 0.2s;
+    width: 224px;
+    display: inline-block;
+    height: 376px;
+    background-color: rgb(39, 158, 74);
+    margin: 30px;
+    vertical-align: top;
+
+}
+.single_container:hover {
+    box-shadow:10px 10px 0px #888888;
+}
+
+.single_image{
+height: 170px;
+width: 224px;
+display: block;
+/*background-color:rgb(52, 223, 223); "Open Sans", sans-serif */
+
+}
+
+.single_text{
+    height: 110px;
+    width: 184px;
+    display: block;
+    /*background-color:rgb(224, 110, 102);*/
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 300;
+    line-height: 18px;
+
+    /*text-align: justify;
+    word-break: break-all;*/
+
+    }
+
+.single_links_container{
+        height: 56px;
+        width: 224px;
+        display: block;
+        background-color:rgb(47, 96, 45);
+        border-top: 2px solid rgb(25, 195, 90);
+        
+        }
+.single_link{
+  display: inline-block;
+  text-decoration: none;
+  width: 52px;
+  height: 52px;
+}
+
+.single_link_icon{
+  text-align: center;
+  height: 28px;
+  width: 28px;
+  padding: 14px;
+  transition-duration: 0.3s;
+}
+
+.single_link_icon:hover {
+  background-color: #3c48b9;
+
+}
+
+
+
+.github{
+background-color: rgb(255, 220, 24);
+
+}
+.web_link{
+  background-color: rgb(255, 100, 24);
+
+}
+.gallery{
+  background-color: rgb(255, 50, 24);
+
+}
+.more{
+  background-color: rgb(255, 20, 24);
+
+}
+/*
+.hover_text{
+  visibility: hidden;
+  opacity: 0;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  transition-duration: 0.3s;
+}
+
+.github_text{
+  margin-left: -86px;
+  margin-top: 65px;
+}
+.weblink {
+  margin-left: 0px;
+  margin-top: 0x;
+}
+
+
+.single_link:hover .single_links_container:nth-child(3) {
+  visibility: visible;
+  opacity: 1;
+}
+.single_link:hover > .weblink {
+  visibility: visible;
+  opacity: 1;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1281px) {
+  /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+.middle_container{
+    width: 1181px;
+    
+}
+    
+  }
+  
+ 
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  .middle_container{
+    width: 875px;
+    
+}
+  }
+  
+  
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  .middle_container{
+    width: 610px;
+    
+}
+    
+  }
+  
+  
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+   
+  }
+  
+  
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+   /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  .middle_container{
+    width: 285px;
+    
+}
+    
+  }
+  
+ 
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+     /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+    
+  }

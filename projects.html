@@ -7,6 +7,10 @@
 <link rel="stylesheet" type="text/css" href="css/navigation_bar.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/projects.css">
+<script src="js/jquery-3.3.1.js"></script>
+
+<script src="js/script.js"></script>
+
 
 </head>
 <body>
@@ -39,21 +43,20 @@
 
 <div class="projects_container">
     <div class="middle_container">
-        <div class="single_container">
+
+        <div class="single_container" id="id_1">
             <img class="single_image" src="img/project_container_img.svg" alt="project">
             <div class="single_text">
                     Kõnesünteesikeskkond koondab endas eesti keele tekst-kõne sünteesi erinevaid variante, rakendusi, liideseid ja muid materjale.. 
             </div>
-            <div class="single_links_container">
+            <div class="single_links_container" id="id_1_links_container">
                 <a class="single_link " href="main.html"><img class="single_link_icon github" src="img/github.svg" alt="project">
         
                 </a>  
-                <!--<span class="hover_text github_text">GitHub</span>-->
+                <!--<span class="hover_text github_text">GitHub</span>onclick="project_container_expand()"-->
                 <a class="single_link " href="main.html"><img class="single_link_icon web_link" src="img/link.svg" alt="project"></a> 
-                
-                <a class="single_link " href="main.html"><img class="single_link_icon gallery" src="img/github.svg" alt="project"></a> 
-                <a class="single_link " href="main.html"><img class="single_link_icon more" src="img/github.svg" alt="project"></a> 
-
+                <a class="single_link " href="main.html"><img class="single_link_icon gallery" src="img/gallery.svg" alt="project"></a> 
+                <div class="single_link " id="more_link" ><img class="single_link_icon more" id="more_expand" src="img/more.svg" alt="project" ></div> 
             </div>
         </div>
         

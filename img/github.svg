@@ -50,17 +50,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.1320312"
-     inkscape:cx="244.52726"
+     inkscape:cx="196.45839"
      inkscape:cy="208.16252"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
-     inkscape:window-width="1920"
-     inkscape:window-height="1001"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
-     inkscape:window-maximized="1" />
+     inkscape:window-width="748"
+     inkscape:window-height="991"
+     inkscape:window-x="1015"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
   <metadata
      id="metadata10271">
     <rdf:RDF>
@@ -69,7 +69,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -80,7 +80,7 @@
      transform="translate(0,-164.70834)">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.77367401px;line-height:0.80000001;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:url(#linearGradient10837);stroke-width:1.27264166;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:38.77367401px;line-height:0.80000001;font-family:Arial;-inkscape-font-specification:Arial;letter-spacing:0px;word-spacing:0px;fill:#fffdfd;fill-opacity:1;stroke:url(#linearGradient10837);stroke-width:1.27264166;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;"
        x="-4.037251"
        y="207.48058"
        id="text10821"
@@ -89,11 +89,11 @@
          id="tspan10819"
          x="-4.037251"
          y="207.48058"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:77.54734802px;line-height:0.80000001;font-family:Arial;-inkscape-font-specification:'Arial Bold';stroke:none;stroke-width:1.27264166;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;fill:#42be4c;fill-opacity:1">Git</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:77.54734802px;line-height:0.80000001;font-family:Arial;-inkscape-font-specification:'Arial Bold';stroke:none;stroke-width:1.27264166;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;fill:#fffdfd;fill-opacity:1;">Git</tspan><tspan
          sodipodi:role="line"
          x="-4.037251"
          y="269.51846"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:77.54734802px;line-height:0.80000001;font-family:Arial;-inkscape-font-specification:'Arial Bold';stroke:none;stroke-width:1.27264166;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;fill:#42be4c;fill-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:77.54734802px;line-height:0.80000001;font-family:Arial;-inkscape-font-specification:'Arial Bold';stroke:none;stroke-width:1.27264166;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;fill:#fffdfd;fill-opacity:1;"
          id="tspan10823">Hub</tspan></text>
   </g>
 </svg>

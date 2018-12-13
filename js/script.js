@@ -56,20 +56,43 @@ function myFunction() {
 
 function show_skill_set() {
   var element = document.getElementById("sub_skill_bar");
-
   //var txtFile = "/home/leesikas01/m/maier/public_html/32/dist/login_details.txt";
-  
-
   //element.style.transition = "1s";
   //element.style.visibility = "visible";
   element.style.display = "block";
   //element.style.webkitTransition = 'opacity 1s';
-
-
-
   //element.scrollIntoView({block:"center"}); // center
   //element.style.opacity = "1";
   document.getElementById("web2").style.width = "50%";
-  
-
 }
+
+function project_container_expand(){
+  var element1 = document.getElementById("id_1");
+  var element2 = document.getElementById("id_1_links_container");
+  var element3 = document.getElementById("more_link");
+  var element4 = document.getElementById("more_expand");
+
+
+
+  element1.style.transition = "1s";
+  element1.style.backgroundColor = "black";
+  element1.style.display = "block";
+  element1.style.width = "100%";
+  element2.style.width = "100%";
+  element3.style.width = "100%";
+  element4.style.width = "100%";
+  element4.style.padding = "14px 0px";
+  element4.style.transform = "scaleX(-1)";
+  element4.style.filter = " FlipH";
+
+  
+}
+
+
+
+$(document).on('click', '#more_expand', function() {
+  $("#id_1").toggleClass('id_1');
+  $("#id_1_links_container").toggleClass('id_1_links_container');
+  $("#more_link").toggleClass('more_link');
+  $("#more_expand").toggleClass('more_expand');
+});

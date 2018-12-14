@@ -20,8 +20,16 @@
     box-shadow:10px 10px 0px #888888;
 }
 
+.id_1_img_text_container{
+  display: inline-block;
+  position: relative;
+  height: 314px;
+  width: 220px;
+}
+
 .single_image{
-height: 170px;
+  position: absolute;
+  height: 320px;
 width: 224px;
 display: block;
 /*background-color:rgb(52, 223, 223); Open Sans, sans-serif */
@@ -39,7 +47,11 @@ display: block;
     color: white;
     font-weight: 300;
     line-height: 18px;
-
+    position: absolute;
+    background-color: rgb(39, 158, 74);
+    bottom: -4px;
+    transition: .5s;
+    overflow: hidden;
     /*text-align: justify;
     word-break: break-all;*/
 
@@ -47,11 +59,12 @@ display: block;
 
 .single_links_container{
         height: 56px;
-        width: 224px;
+        width: 100%;
         display: flex;
         background-color:rgb(47, 96, 45);
         border-top: 2px solid rgb(25, 195, 90);
         transition: 0.8s;
+        vertical-align: top;
         }
 
 #id_1_links_container:nth-child(1){
@@ -99,34 +112,81 @@ background-color: #0D47A1;
   background-color: #1976D2;
 
 }
+.more_link_container{
+  width: 100%;
+}
 .more{
   background-color: #1E88E5;
-
+  width: 100%;
+  padding: 14px 0px;
+  transition: 0s;
 }
 
 /* on click class */
-.id_1{
-  transition : 1s;
-  width : 100%;
+.id_1_single_container{
+  
+  width : 700px;
 }
 .id_1_links_container{
   width : 100%;
 }
-.more_link{
+.id_1_more_link{
   width : 100%;
 }
-.more_expand{
+.id_1_more_expand{
+  
+  transform : scaleX(-1);
   width : 100%;
   padding : 14px 0px;
-  transform : scaleX(-1);
-  filter :  FlipH;
+  
+}
+.id_1_single_text{
+  
+ height: 0px;
+ transition: height .5s;
+ padding: 0px 20px;
+ overflow: hidden;
+
+}
+.id_1_single_image{
+  /*display: inline-block;
+  height: 300px;*/
+
 }
 
+.id_1_second_text_container_none{
 
+    display: inline-block;
+    width: 0;
+visibility: hidden;    
+position: absolute;
+overflow: hidden;
 
+}
+.id_1_second_text_container{
+  transition: 0.8s;
+  display: inline-block;
+  vertical-align: top;
+  width: 480px;
+  height:318px;
+  
+  visibility: visible; 
+}
+p{
+  padding: 15px 30px;
+  font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 300;
+    line-height: 18px;
+}
 
-
-
+h1{
+  text-align: center;
+    margin: 0;
+    /* margin-top: 15px; */
+    font-size: 3em;
+    color: #26db44;
+}
 
 
 

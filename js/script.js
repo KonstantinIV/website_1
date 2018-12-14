@@ -90,9 +90,13 @@ function project_container_expand(){
 
 
 
-$(document).on('click', '#more_expand', function() {
-  $("#id_1").toggleClass('id_1');
+$(document).on('click', '#id_1_more_expand', function() {
+  $("#id_1_more_expand").toggleClass('id_1_more_expand');
+  $("#id_1_single_container").toggleClass('id_1_single_container');
   $("#id_1_links_container").toggleClass('id_1_links_container');
-  $("#more_link").toggleClass('more_link');
-  $("#more_expand").toggleClass('more_expand');
+  $("#id_1_more_link").toggleClass('id_1_more_link');
+  $("#id_1_single_text").toggleClass('id_1_single_text');
+  $("#id_1_single_image").toggleClass('id_1_single_image');
+  $("#id_1_second_text_container").toggleClass('id_1_second_text_container');
+
 });

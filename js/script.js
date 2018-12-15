@@ -98,5 +98,41 @@ $(document).on('click', '#id_1_more_expand', function() {
   $("#id_1_single_text").toggleClass('id_1_single_text');
   $("#id_1_single_image").toggleClass('id_1_single_image');
   $("#id_1_second_text_container").toggleClass('id_1_second_text_container');
-
+  $("#id_1_ghostly_text").toggleClass('id_1_ghostly_text');
 });
+
+
+$(document).on('click', '#modal_gallery', function(event) {
+  var modal_gallery = document.getElementById('modal_gallery');
+
+  if(event.target == modal_gallery ){
+    $("#modal_gallery").removeClass('modal_gallery_active');
+
+  }
+});
+
+$(document).on('click', '#id_1_gallery_modal_expand', function() {
+  $("#modal_gallery").toggleClass('modal_gallery_active');
+});
+
+/*
+document.getElementById('modal_close').addEventListener("click", function() {
+  var modal_gallery = document.getElementById('modal_gallery');
+	// If user clicks inside the element, do nothing
+	//if (event.target.closest(".box")) return;
+
+	// If user clicks outside the element, hide it!
+//box.classList.add("js-is-hidden");
+modal_gallery.style.visibility = "hidden";
+modal_gallery.style.visibility = "hidden";
+$("#modal_gallery").toggleClass('modal_gallery_active');
+});*/
+/*
+window.onclick = function(event) {
+  var modal_close = document.getElementById('modal_close');
+  var modal_gallery = document.getElementById('modal_gallery');
+
+  if (event.target == modal_close) {
+    modal_gallery.style.visibility = "hidden";
+  }
+}*/

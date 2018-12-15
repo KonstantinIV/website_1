@@ -7,13 +7,29 @@
 <link rel="stylesheet" type="text/css" href="css/navigation_bar.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/projects.css">
+<link rel="stylesheet" type="text/css" href="css/modal_gallery.css">
 <script src="js/jquery-3.3.1.js"></script>
-
 <script src="js/script.js"></script>
 
 
 </head>
-<body>
+<body id="modal_close">
+
+        <div class="modal_gallery_container" id="modal_gallery">
+            <div class="modal_gallery_image_container">
+                <div class="big_image_container">
+                        <div class="big_image">
+                                <img src="https://images.pexels.com/photos/1055058/pexels-photo-1055058.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Nature" onclick="openImg(this);">
+                        </div>
+                </div>
+                <div class="small_image_container">
+                        <div class="small_image"><img src="https://images.pexels.com/photos/1055058/pexels-photo-1055058.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Nature" onclick="openImg(this);"></div>
+                        <div class="small_image"><img src="https://images.pexels.com/photos/34650/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=500" alt="Nature" onclick="openImg(this);"></div>
+                        <div class="small_image"><img src="https://images.pexels.com/photos/756084/pexels-photo-756084.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=500" alt="Nature" onclick="openImg(this);"></div>
+                        <div class="small_image"><img src="https://images.pexels.com/photos/1105671/pexels-photo-1105671.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=500&w=500" alt="Nature" onclick="openImg(this);"></div>
+                </div>
+            </div>
+        </div>
 <header>
 
 <div class="image_container">
@@ -41,6 +57,7 @@
 </header>
 
 
+
 <div class="projects_container">
     <div class="middle_container">
 
@@ -52,21 +69,21 @@
             </div>
             <div class="id_1_second_text_container_none" id="id_1_second_text_container">
                 <h1>. . .</h1>
-                <p> Kõnesünteesikeskkond koondab endas eesti keele tekst-kõne sünteesi erinevaid variante, rakendusi, liideseid ja muid materjale.. 
-                    </p>
-                
-                <p>Kõnesünteesikeskkond koondab endas eesti keele tekst-kõne sünteesi erinevaid variante, rakendusi, liideseid ja muid materjale..Kõnesünteesikeskkond koondab endas eesti keele tekst-kõne sünteesi erinevaid variante, </p>
+                <p id="id_1_ghostly_text"> Kõnesünteesikeskkond koondab endas eesti keele tekst-kõne sünteesi erinevaid variante, rakendusi, liideseid ja muid materjale.. 
+                <br><br>Kõnesünteesikeskkond koondab endas eesti keele tekst-kõne sünteesi erinevaid variante, rakendusi, liideseid ja muid materjale..Kõnesünteesikeskkond koondab endas eesti keele tekst-kõne sünteesi erinevaid variante, </p>
             </div>
-            
-
-
             <div class="single_links_container" id="id_1_links_container">
                 <a class="single_link " href="main.html"><img class="single_link_icon github" src="img/github.svg" alt="project">
-        
                 </a>  
                 <!--<span class="hover_text github_text">GitHub</span>onclick="project_container_expand()"-->
                 <a class="single_link " href="main.html"><img class="single_link_icon web_link" src="img/link.svg" alt="project"></a> 
-                <a class="single_link " href="main.html"><img class="single_link_icon gallery" src="img/gallery.svg" alt="project"></a> 
+
+
+
+                <div class="single_link " ><img class="single_link_icon gallery" id="id_1_gallery_modal_expand"src="img/gallery.svg" alt="project"></div> 
+                
+                
+                
                 <div class="single_link more_link_container" id="id_1_more_link" ><img class="single_link_icon more" id="id_1_more_expand" src="img/more.svg" alt="project" ></div> 
             </div>
         </div>

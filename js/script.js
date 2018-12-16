@@ -90,15 +90,17 @@ function project_container_expand(){
 
 
 
-$(document).on('click', '#id_1_more_expand', function() {
-  $("#id_1_more_expand").toggleClass('id_1_more_expand');
-  $("#id_1_single_container").toggleClass('id_1_single_container');
-  $("#id_1_links_container").toggleClass('id_1_links_container');
-  $("#id_1_more_link").toggleClass('id_1_more_link');
-  $("#id_1_single_text").toggleClass('id_1_single_text');
-  $("#id_1_single_image").toggleClass('id_1_single_image');
-  $("#id_1_second_text_container").toggleClass('id_1_second_text_container');
-  $("#id_1_ghostly_text").toggleClass('id_1_ghostly_text');
+$(document).on('click', '.more', function() {
+  var id = $(this).attr('id');
+  //window.alert(id);
+  $("#"+id+"_more_expand").toggleClass('id_more_expand');
+  $("#"+id+"_single_container").toggleClass('id_single_container');
+  $("#"+id+"_links_container").toggleClass('id_links_container');
+  $("#"+id+"_more_link").toggleClass('id_more_link');
+  $("#"+id+"_single_text").toggleClass('id_single_text');
+  $("#"+id+"_single_image").toggleClass('id_single_image');
+  $("#"+id+"_second_text_container").toggleClass('id_second_text_container');
+  $("#"+id+"_ghostly_text").toggleClass('id_ghostly_text');
 });
 
 
@@ -114,6 +116,33 @@ $(document).on('click', '#modal_gallery', function(event) {
 $(document).on('click', '#id_1_gallery_modal_expand', function() {
   $("#modal_gallery").toggleClass('modal_gallery_active');
 });
+
+
+function modal_gallery_change(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expand_image");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  
+  // Show the container element (hidden with CSS)
+}
+
+
+
+$(document).on('click', '.oops', function() {
+  $(this).toggleClass('hoops');
+  
+});
+
+
+
+
+
+
+
+
+
 
 /*
 document.getElementById('modal_close').addEventListener("click", function() {

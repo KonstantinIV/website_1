@@ -12,7 +12,7 @@
     display: inline-block;
     height: 376px;
     background-color: rgb(39, 158, 74);
-    margin: 30px;
+    margin: 10px;
     vertical-align: top;
 
 }
@@ -20,7 +20,7 @@
     box-shadow:10px 10px 0px #888888;
 }
 
-.id_1_img_text_container{
+.img_text_container{
   display: inline-block;
   position: relative;
   height: 314px;
@@ -33,7 +33,6 @@
 width: 224px;
 display: block;
 /*background-color:rgb(52, 223, 223); Open Sans, sans-serif */
-
 }
 
 .single_text{
@@ -66,19 +65,19 @@ display: block;
         transition: 0.8s;
         vertical-align: top;
         }
-
-#id_1_links_container:nth-child(1){
+/*
+#id_links_container:nth-child(1){
   order:1;
 }
-#id_1_links_container:nth-child(2){
+#id_links_container:nth-child(2){
   order:2;
 }
-#id_1_links_container:nth-child(3){
+#id_links_container:nth-child(3){
   order:3;
 }
-#id_1_links_container:nth-child(4){
+#id_links_container:nth-child(4){
   order:4;
-}
+}*/
 
 .single_link{
   display: inline-block;
@@ -140,49 +139,57 @@ h1{
     color: #26db44;
 }
 
+.second_text_container_none{
+
+  display: inline-block;
+  width: 0;
+visibility: hidden;    
+position: absolute;
+overflow: hidden;
+
+}
+
+
+
+
+
+
+
 
 /* on click class */
-.id_1_single_container{
+.id_single_container{
   
   width : 700px;
 }
-.id_1_links_container{
+.id_links_container{
   width : 100%;
 }
-.id_1_more_link{
+.id_more_link{
   width : 100%;
 }
-.id_1_more_expand{
+.id_more_expand{
   
   transform : scaleX(-1);
   width : 100%;
   padding : 14px 0px;
   
 }
-.id_1_single_text{
-  
- height: 0px;
- transition: height .5s;
- padding: 0px 20px;
- overflow: hidden;
 
-}
-.id_1_single_image{
+.id_single_image{
   /*display: inline-block;
   height: 300px;*/
 
 }
+.id_single_text{
+  
+  height: 0px;
+  transition: height .5s;
+  padding: 0px 20px;
+  overflow: hidden;
+ 
+ }
 
-.id_1_second_text_container_none{
-
-    display: inline-block;
-    width: 0;
-visibility: hidden;    
-position: absolute;
-overflow: hidden;
-
-}
-.id_1_second_text_container{
+.id_second_text_container{
   transition: 0.8s;
   display: inline-block;
   vertical-align: top;
@@ -191,7 +198,7 @@ overflow: hidden;
   
   visibility: visible; 
 }
-.id_1_ghostly_text{
+.id_ghostly_text{
 
   /*visibility: visible;*/
   opacity: 1;

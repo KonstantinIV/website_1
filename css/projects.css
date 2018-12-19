@@ -5,7 +5,7 @@
 .middle_container{
     margin: 0 auto;
 }
-/*****************************************************/
+/**********************project box's*******************************/
 .single_container{
     transition: 0.8s;
     width: 224px;
@@ -24,25 +24,23 @@
 }
 
 .img_text_container{
-  display: inline-block;
-  position: relative;
-  height: 314px;
-  width: 220px;
+    display: inline-block;
+    position: relative;
+    height: 314px;
+    width: 220px;
 }
 
 .single_image{
-  position: absolute;
-  height: 318px;
-width: 224px;
-display: block;
-/*background-color:rgb(52, 223, 223); Open Sans, sans-serif */
+    position: absolute;
+    height: 318px;
+    width: 224px;
+    display: block;
 }
 
 .single_text{
     height: 110px;
     width: 184px;
     display: block;
-    /*background-color:rgb(224, 110, 102);*/
     padding: 20px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -54,65 +52,49 @@ display: block;
     bottom: -4px;
     transition: .5s;
     overflow: hidden;
-    /*text-align: justify;
-    word-break: break-all;*/
-
-    }
+}
 
 .single_links_container{
-        height: 56px;
-        width: 100%;
-        display: flex;
-        background-color:rgb(47, 96, 45);
-        border-top: 2px solid rgb(25, 195, 90);
-        transition: 0.8s;
-        vertical-align: top;
-        }
-/*
-#id_links_container:nth-child(1){
-  order:1;
+    height: 56px;
+    width: 100%;
+    display: flex;
+    background-color:rgb(47, 96, 45);
+    border-top: 2px solid rgb(25, 195, 90);
+    transition: 0.8s;
+    vertical-align: top;
 }
-#id_links_container:nth-child(2){
-  order:2;
-}
-#id_links_container:nth-child(3){
-  order:3;
-}
-#id_links_container:nth-child(4){
-  order:4;
-}*/
 
 .single_link{
-  display: inline-block;
-  text-decoration: none;
-  width: 56px;
-  height: 56px;
+    display: inline-block;
+    text-decoration: none;
+    width: 56px;
+    height: 56px;
 }
 
 .single_link_icon{
-  text-align: center;
-  height: 28px;
-  width: 28px;
-  padding: 14px;
-  transition-duration: 0.3s;
+    text-align: center;
+    height: 28px;
+    width: 28px;
+    padding: 14px;
+    transition-duration: 0.3s;
 }
 
 .single_link_icon:hover {
   background-color: #3c48b9;
-
 }
 
+
+
+/*ICONS*/
 .github{
-background-color: #0D47A1;
+  background-color: #0D47A1;
 
 }
 .web_link{
   background-color: #1565C0;
-
 }
 .gallery{
   background-color: #1976D2;
-
 }
 .more_link_container{
   width: 100%;
@@ -123,13 +105,15 @@ background-color: #0D47A1;
   padding: 14px 0px;
   transition: 0s;
 }
+
+
+/*TEXT*/
 p{
   padding: 15px 30px;
   font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-weight: 300;
     line-height: 18px;
-  
     transition: 1.6s;
     opacity: 0;
 }
@@ -137,29 +121,21 @@ p{
 h1{
   text-align: center;
     margin: 0;
-    /* margin-top: 15px; */
     font-size: 3em;
     color: #26db44;
 }
 
 .second_text_container_none{
-
   display: inline-block;
   width: 0;
-visibility: hidden;    
-position: absolute;
-overflow: hidden;
+  visibility: hidden;    
+  position: absolute;
+  overflow: hidden;
 
 }
 
 
-
-
-
-
-
-
-/* on click class */
+/* on click SHOW THESE class  */
 .id_single_container{
   
   width : 700px;
@@ -178,13 +154,7 @@ overflow: hidden;
   
 }
 
-.id_single_image{
-  /*display: inline-block;
-  height: 300px;*/
-
-}
 .id_single_text{
-  
   height: 0px;
   transition: height .5s;
   padding: 0px 20px;
@@ -198,63 +168,18 @@ overflow: hidden;
   vertical-align: top;
   width: 480px;
   height:318px;
-  
   visibility: visible; 
 }
 .id_ghostly_text{
-
-  /*visibility: visible;*/
   opacity: 1;
 }
 
 
 
-/*
-.hover_text{
-  visibility: hidden;
-  opacity: 0;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  transition-duration: 0.3s;
-}
-
-.github_text{
-  margin-left: -86px;
-  margin-top: 65px;
-}
-.weblink {
-  margin-left: 0px;
-  margin-top: 0x;
-}
-
-
-.single_link:hover .single_links_container:nth-child(3) {
-  visibility: visible;
-  opacity: 1;
-}
-.single_link:hover > .weblink {
-  visibility: visible;
-  opacity: 1;
-}*/
 
 
 
-
-
-
-
-
-
-
-
-
-
+/*Different devices*/
 
 
 @media (min-width: 1281px) {

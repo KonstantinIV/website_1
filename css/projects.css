@@ -12,10 +12,13 @@
     display: inline-block;
     height: 376px;
     background-color: rgb(39, 158, 74);
-    margin: 10px;
+    margin: 30px;
     vertical-align: top;
+    opacity: 0;
+    overflow:hidden;
 
 }
+
 .single_container:hover {
     box-shadow:10px 10px 0px #888888;
 }

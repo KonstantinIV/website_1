@@ -44,6 +44,58 @@ function handle(delta) {
 
 
 */
+function create_box_elements(){
+  var title = "Constructing HTML Elements";
+  var id_number = 1;
+  for (i = 1; i < 25; i++) { 
+    var html = [
+      '<div class="single_container" id="id_'+i+'_single_container">',
+            '<div class="img_text_container" id="id_'+i+'_img_text_container">',
+                '<img class="single_image" id="id_'+i+'_single_image" src="img/project_container_img.svg" alt="project">',
+                '<div class="single_text" id="id_'+i+'_single_text">Kõnesünteesikeskkond koondab endas eesti keele tekst-kõne sünteesi erinevaid variante, rakendusi, liideseid ja muid materjale.. ',
+                '</div>',
+            '</div>',
+            '<div class="second_text_container_none" id="id_'+i+'_second_text_container">',
+                '<h1>. . .</h1>',
+                '<p id="id_'+i+'_ghostly_text"> Kõnesünteesikeskkond koondab endas eesti keele tekst-kõne sünteesi erinevaid variante, rakendusi, liideseid ja muid materjale.. ',
+                '<br><br>Kõnesünteesikeskkond koondab endas eesti keele tekst-kõne sünteesi erinevaid variante, rakendusi, liideseid ja muid materjale..Kõnesünteesikeskkond koondab endas eesti keele tekst-kõne sünteesi erinevaid variante, </p>',
+            '</div>',
+            '<div class="single_links_container" id="id_'+i+'_links_container">',
+                '<a class="single_link " href="main.html"><img class="single_link_icon github" src="img/github.svg" alt="project">',
+                '</a>  ',
+                
+                '<a class="single_link " href="main.html"><img class="single_link_icon web_link" src="img/link.svg" alt="project"></a> ',
+                '<div class="single_link " ><img class="single_link_icon gallery" id="id_'+i+'_gallery_modal_expand"src="img/gallery.svg" alt="project"></div> ',
+                '<div class="single_link more_link_container" id="id_'+i+'_more_link" ><img class="single_link_icon more" id="id_'+i+'" src="img/more.svg" alt="project" ></div> ',
+            '</div>',
+        '</div>'
+  ].join("\n");
+  // html: '<div ...>\n<h1 ...>Constructing HTML Elements<h1>\n</div>'
+  
+  $(".middle_container").append(html);
+ // setTimeout(\,3000);/*
+ /*$(".single_container").css("opacity", "0");
+  $(".single_container").css("transition", "1s");
+  $(".single_container").css("opacity", "1");*/
+  $("#id_"+i+"_single_container").focus();
+  $("#id_"+i+"_single_container").css("transition-delay", i*0.2+"s");
+  $("#id_"+i+"_single_container").addClass('appear');
+  
+
+  }
+
+  
+  
+}
+window.onload=create_box_elements;
+
+
+
+
+
+
+
+
 
 function myFunction() {
   document.getElementById("web").style.width = "60%";
@@ -68,7 +120,7 @@ function show_skill_set() {
 
 function project_container_expand(){
   var element1 = document.getElementById("id_1");
-  var element2 = document.getElementById("id_1_links_container");
+  var element2 = document.getElementById("id'+i+'links_container");
   var element3 = document.getElementById("more_link");
   var element4 = document.getElementById("more_expand");
 
@@ -93,6 +145,7 @@ function project_container_expand(){
 $(document).on('click', '.more', function() {
   var id = $(this).attr('id');
   //window.alert(id);
+  $("#"+id+"_single_container").css("transition-delay", "0s");
   $("#"+id+"_more_expand").toggleClass('id_more_expand');
   $("#"+id+"_single_container").toggleClass('id_single_container');
   $("#"+id+"_links_container").toggleClass('id_links_container');
@@ -113,7 +166,7 @@ $(document).on('click', '#modal_gallery', function(event) {
   }
 });
 
-$(document).on('click', '#id_1_gallery_modal_expand', function() {
+$(document).on('click', '.gallery', function() {
   $("#modal_gallery").toggleClass('modal_gallery_active');
 });
 
@@ -165,3 +218,8 @@ window.onclick = function(event) {
     modal_gallery.style.visibility = "hidden";
   }
 }*/
+
+
+
+
+

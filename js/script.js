@@ -4,7 +4,8 @@
 var dict = {
   1: ["Sissejuhatus_id_1","Esimene_loik_id_1","Teine_loik_id_1",3],
   2: ["Sissejuhatus_id_2","Esimene_loik_id_2","Teine_loik_id_2",3],
-  
+  3: ["Sissejuhatus_id_3","Esimene_loik_id_3","Teine_loik_id_3",3],
+  4: ["Sissejuhatus_id_4","Esimene_loik_id_4","Teine_loik_id_4",3],
 };
 
 //Creation of project html elemnts/containers

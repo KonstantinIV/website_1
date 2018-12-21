@@ -139,6 +139,7 @@ h1{
 .id_single_container{
   
   width : 700px;
+  
 }
 .id_links_container{
   width : 100%;
@@ -147,7 +148,6 @@ h1{
   width : 100%;
 }
 .id_more_expand{
-  
   transform : scaleX(-1);
   width : 100%;
   padding : 14px 0px;

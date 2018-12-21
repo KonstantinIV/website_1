@@ -1,18 +1,19 @@
 .projects_container{
     width: inherit;
-    padding: 0 50px;
+    /*padding: 0 20px;*/
 }
 .middle_container{
+  width: 100%;
     margin: 0 auto;
 }
 /**********************project box's*******************************/
 .single_container{
     transition: 0.8s;
-    width: 224px;
+    width: 47.9%;
     display: inline-block;
-    height: 376px;
+    height: 378px;
     background-color: rgb(39, 158, 74);
-    margin: 30px;
+    margin: 10px;
     vertical-align: top;
     opacity: 0;
     overflow:hidden;
@@ -26,8 +27,11 @@
 .img_text_container{
     display: inline-block;
     position: relative;
-    height: 314px;
+    height: 308px;
     width: 220px;
+    vertical-align: bottom;
+    background-color: #63aa78;
+    border: 5px solid rgb(0, 255, 170);
 }
 
 .single_image{
@@ -36,7 +40,7 @@
     width: 224px;
     display: block;
 }
-
+/*
 .single_text{
     height: 110px;
     width: 184px;
@@ -53,7 +57,7 @@
     transition: .5s;
     overflow: hidden;
 }
-
+*/
 .single_links_container{
     height: 56px;
     width: 100%;
@@ -67,14 +71,14 @@
 .single_link{
     display: inline-block;
     text-decoration: none;
-    width: 56px;
+    width: 75px;
     height: 56px;
 }
 
 .single_link_icon{
     text-align: center;
     height: 28px;
-    width: 28px;
+    width: 47px;
     padding: 14px;
     transition-duration: 0.3s;
 }
@@ -86,6 +90,7 @@
 
 
 /*ICONS*/
+
 .github{
   background-color: #0D47A1;
 
@@ -98,6 +103,7 @@
 }
 .more_link_container{
   width: 100%;
+  background-color: #1E88E5;
 }
 .more{
   background-color: #1E88E5;
@@ -108,6 +114,7 @@
 
 
 /*TEXT*/
+
 p{
   padding: 15px 30px;
   font-family: Arial, Helvetica, sans-serif;
@@ -115,7 +122,7 @@ p{
     font-weight: 300;
     line-height: 18px;
     transition: 1.6s;
-    opacity: 0;
+    
 }
 
 h1{
@@ -127,15 +134,17 @@ h1{
 
 .second_text_container_none{
   display: inline-block;
-  width: 0;
-  visibility: hidden;    
+  width: 28.8%;
+  visibility: visible;    
   position: absolute;
   overflow: hidden;
+  transition: inherit;
 
 }
 
 
 /* on click SHOW THESE class  */
+/*
 .id_single_container{
   
   width : 700px;
@@ -172,7 +181,7 @@ h1{
 }
 .id_ghostly_text{
   opacity: 1;
-}
+}*/
 
 
 
@@ -188,7 +197,7 @@ h1{
   ##Screen : 1281px to higher resolution desktops
 */
 .middle_container{
-    width: 1181px;
+    /*width: 1181px;*/
     
 }
     
@@ -202,7 +211,7 @@ h1{
     ##Screen : B/w 1025px to 1280px
   */
   .middle_container{
-    width: 875px;
+    /*width: 875px;*/
     
 }
   }
@@ -214,11 +223,21 @@ h1{
     ##Device : Tablets, Ipads (portrait)
     ##Screen : B/w 768px to 1024px
   */
-  .middle_container{
-    width: 610px;
+  .single_container{
+    width: 98%;
     
 }
+.second_text_container_none{
+  width: 70.8%;
+
+}
+  .middle_container{
+    /*width: 610px;*/
     
+}
+
+
+
   }
   
   
@@ -228,7 +247,14 @@ h1{
     ##Device : Tablets, Ipads (landscape)
     ##Screen : B/w 768px to 1024px
   */
-   
+  .single_container{
+    width: 98%;
+    
+}
+.second_text_container_none{
+  width: 70.8%;
+
+}
   }
   
   
@@ -239,10 +265,17 @@ h1{
     ##Screen : B/w 481px to 767px
   */
   .middle_container{
-    width: 285px;
-    
+    /*width: 285px;*/
+  
 }
-    
+.single_container{
+  width: 98%;
+  
+}
+.second_text_container_none{
+  width: 70.8%;
+
+}
   }
   
  
@@ -252,5 +285,12 @@ h1{
     ##Device : Most of the Smartphones Mobiles (Portrait)
     ##Screen : B/w 320px to 479px
   */
+  .single_container{
+    width: 98%;
     
+}
+.second_text_container_none{
+  width: 70.8%;
+
+}
   }

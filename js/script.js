@@ -10,14 +10,12 @@ var dict = {
 
 //Creation of project html elemnts/containers
 function create_box_elements(){
-  for (var i in dict) { //Get data from dictionary, which includes id, text
+  for (var i in dict) { //Get data from dictionary, which includes id, text '<img class="single_image" id="id_'+i+'_single_image" src="img/project_container_img.svg" alt="project">',
     var arr = dict[i];
     var html = [
       '<div class="single_container" id="id_'+i+'_single_container">',
             '<div class="img_text_container" id="id_'+i+'_img_text_container">',
-                '<img class="single_image" id="id_'+i+'_single_image" src="img/project_container_img.svg" alt="project">',
-                '<div class="single_text" id="id_'+i+'_single_text">'+arr[0],
-                '</div>',
+                
             '</div>',
             '<div class="second_text_container_none" id="id_'+i+'_second_text_container">',
                 '<h1>. . .</h1>',
@@ -30,7 +28,7 @@ function create_box_elements(){
                 
                 '<a class="single_link " href="main.html"><img class="single_link_icon web_link" src="img/link.svg" alt="project"></a> ',
                 '<div class="single_link " ><img class="single_link_icon gallery" id="id_'+i+'_gallery_modal_expand"src="img/gallery.svg" alt="project"></div> ',
-                '<div class="single_link more_link_container" id="id_'+i+'_more_link" ><img class="single_link_icon more" id="id_'+i+'" src="img/more.svg" alt="project" ></div> ',
+                '<div class="single_link more_link_container" id="id_'+i+'_more_link" ></div> ',
             '</div>',
         '</div>'
   ].join("\n");
@@ -42,6 +40,9 @@ function create_box_elements(){
   $("#id_"+i+"_single_container").addClass('appear');
   
   }
+  for (var i in dict) {
+  $("#id_"+i+"_single_container").css("transition-delay","0s");
+  }
 }
 window.onload=create_box_elements; // Load project containers when page has loaded
 
@@ -49,7 +50,8 @@ window.onload=create_box_elements; // Load project containers when page has load
 /*Expand single container based on id*/
 $(document).on('click', '.more', function() {
   var id = $(this).attr('id');
-  //window.alert(id);
+  //window.alert(id)
+  /*
   $("#"+id+"_single_container").css("transition-delay", "0s");
   $("#"+id+"_more_expand").toggleClass('id_more_expand');
   $("#"+id+"_single_container").toggleClass('id_single_container');
@@ -58,7 +60,7 @@ $(document).on('click', '.more', function() {
   $("#"+id+"_single_text").toggleClass('id_single_text');
   $("#"+id+"_single_image").toggleClass('id_single_image');
   $("#"+id+"_second_text_container").toggleClass('id_second_text_container');
-  $("#"+id+"_ghostly_text").toggleClass('id_ghostly_text');
+  $("#"+id+"_ghostly_text").toggleClass('id_ghostly_text');*/
 });
 
 

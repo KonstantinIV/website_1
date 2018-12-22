@@ -46,6 +46,7 @@ function create_box_elements(){
 }
 window.onload=create_box_elements; // Load project containers when page has loaded
 
+
 /**********ON CLICK EVENTS*************/
 /*Expand single container based on id*/
 $(document).on('click', '.more', function() {

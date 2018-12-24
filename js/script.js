@@ -1,7 +1,25 @@
+var dict = {};
+
+$.ajax({ method: "GET",url:"../php/script.php",success: function(data) {
+  console.log(jQuery.type( data ));
+  
+  //return data; 
+}
+ // var result = $.parseJSON(data);
+/* $.each(result,function(key,value){
+
+ })*/
+});
+
+
+
+
+
+
 
 //Data for project containers
 
-var dict = {
+var dict2 = {
   1: ["Sissejuhatus_id_1","Esimene_loik_id_1","Teine_loik_id_1",3],
   2: ["Sissejuhatus_id_2","Esimene_loik_id_2","Teine_loik_id_2",3],
   3: ["Sissejuhatus_id_3","Esimene_loik_id_3","Teine_loik_id_3",3],

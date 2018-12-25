@@ -1,7 +1,23 @@
 var dict = {};
 
 $.ajax({ method: "GET",url:"../php/script.php",success: function(data) {
-  console.log(jQuery.type( data ));
+  console.log( JSON.parse(data));
+  var object_data = JSON.parse(data);
+
+  for (var i in object_data) {
+    //output+="<li>" + json_obj[i].Language + ",  " + json_obj[i].ID + "</li>";
+    console.log(object_data[i].first_text );
+    /*var temp_arr = [];
+    temp_arr[0] = object_data[i].first_text;*/
+
+    dict[object_data[i].ID] = [object_data[i].first_text,object_data[i].second_text,object_data[i].third_text];
+  }
+  console.log( dict);
+
+  /*var items = $.JSON.parse(data).items.map(function (item) {
+    return item.ID + ': ' + item.first_text;
+  });*/
+  
   
   //return data; 
 }

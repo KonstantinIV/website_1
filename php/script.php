@@ -12,19 +12,21 @@ if ($conn->connect_error) {
 } 
 
 
-$sql = "SELECT ID , first_text FROM project_text";
+$sql = "SELECT ID , first_text, second_text, third_text FROM project_text";
 $result = $conn->query($sql);
+$information = array();
 
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo  $row["ID"]. "                 ".$row["first_text"];
+        $information[] = $row;
         //echo $row;
     }
 } else {
     echo "0 results";
 }
 $conn->close();
+echo  json_encode($information); 
 /*
   $output = "TROOLRROTRKTOERKPTKERPKTRK";
   echo $output;*/

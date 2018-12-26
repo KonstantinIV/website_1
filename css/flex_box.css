@@ -1,6 +1,34 @@
+body{
+    background-color: rgb(47, 47, 90);
+}
+
+
+
 .container{
     display:flex;
+    width: 100%;
+    
+
 }
 .child{
-    
+    height: 40px;
+    width: 70px;
+}
+
+
+
+.child1{
+    order: 7; /* default is 0 */
+    background-color: azure;
+
+}
+.child2{
+    order: 2; /* default is 0 */
+    background-color: rgb(82, 107, 218);
+
+}
+.child3{
+    order: 6; /* default is 0 */
+    background-color: rgb(231, 245, 104);
+
 }

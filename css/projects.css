@@ -111,6 +111,11 @@
   padding: 14px 0px;
   transition: 0s;
 }
+.nonactive{
+  background-color: rgb(101, 113, 124);
+  transition-duration: 0s;
+  pointer-events: none;
+}
 
 
 /*TEXT*/
@@ -213,6 +218,14 @@ h1{
   .middle_container{
     /*width: 875px;*/
     
+}
+.single_container{
+  width: 98%;
+  
+}
+.second_text_container_none{
+  width: 70.8%;
+
 }
   }
   

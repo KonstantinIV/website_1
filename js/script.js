@@ -36,16 +36,23 @@ $.ajax({ method: "GET",url:"../php/script.php",success: function(data) {
 //Data for project containers
 
 var dict = {
-  1: ["Sissejuhatus_id_1","Esimene_loik_id_1","Teine_loik_id_1",3],
-  2: ["Sissejuhatus_id_2","Esimene_loik_id_2","Teine_loik_id_2",3],
-  3: ["Sissejuhatus_id_3","Esimene_loik_id_3","Teine_loik_id_3",3],
-  4: ["Sissejuhatus_id_4","Esimene_loik_id_4","Teine_loik_id_4",3],
+  1: ["Sissejuhatus_id_1","Esimene_loik_id_1","Teine_loik_id_1",3,"https://github.com/KonstantinIV?tab=repositories",""],
+  2: ["Sissejuhatus_id_2","Esimene_loik_id_2","Teine_loik_id_2",3,"https://github.com/KonstantinIV?tab=repositories","https://github.com/KonstantinIV?tab=repositories"],
+  3: ["Sissejuhatus_id_3","Esimene_loik_id_3","Teine_loik_id_3",3,"https://github.com/KonstantinIV?tab=repositories",""],
+  4: ["Sissejuhatus_id_4","Esimene_loik_id_4","Teine_loik_id_4",3,"https://github.com/KonstantinIV?tab=repositories",""],
 };
 
 //Creation of project html elemnts/containers
 function create_box_elements(){
   for (var i in dict) { //Get data from dictionary, which includes id, text '<img class="single_image" id="id_'+i+'_single_image" src="img/project_container_img.svg" alt="project">',
     var arr = dict[i];
+    if (arr[5] == "") {
+      var act = ""
+      var act_class = "nonactive";
+    }else{
+      var act = 'href="'+arr[5]+'"';
+      var act_class = "";
+    }
     var html = [
       '<div class="single_container" id="id_'+i+'_single_container">',
             '<div class="img_text_container" id="id_'+i+'_img_text_container">',
@@ -57,10 +64,10 @@ function create_box_elements(){
                 '<br><br>'+arr[2]+' </p>',
             '</div>',
             '<div class="single_links_container" id="id_'+i+'_links_container">',
-                '<a class="single_link " href="main.html"><img class="single_link_icon github" src="img/github.svg" alt="project">',
+                '<a class="single_link " href="'+arr[4]+'"><img class="single_link_icon github" src="img/github.svg" alt="project">',
                 '</a>  ',
                 
-                '<a class="single_link " href="main.html"><img class="single_link_icon web_link" src="img/link.svg" alt="project"></a> ',
+                '<a class="single_link '+act_class+'" '+act+'><img class="single_link_icon web_link '+act_class+'" src="img/link.svg" alt="project"></a> ',
                 '<div class="single_link " ><img class="single_link_icon gallery" id="id_'+i+'_gallery_modal_expand"src="img/gallery.svg" alt="project"></div> ',
                 '<div class="single_link more_link_container" id="id_'+i+'_more_link" ></div> ',
             '</div>',
